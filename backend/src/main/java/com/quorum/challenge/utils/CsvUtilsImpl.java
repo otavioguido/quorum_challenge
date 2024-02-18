@@ -15,11 +15,13 @@ import java.util.Map;
 @Service
 public class CsvUtilsImpl implements CsvUtils {
 
+    private static final String CSV_FILES = "csvFiles/";
+
     @Override
     public Map<Integer, VoteResult> getVoteResultsData() {
         try {
             Map<Integer, VoteResult> result = new HashMap<>();
-            BufferedReader reader = new BufferedReader(new FileReader("vote_results.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader(CSV_FILES + "vote_results.csv"));
             String line = reader.readLine();
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
@@ -37,7 +39,7 @@ public class CsvUtilsImpl implements CsvUtils {
     public Map<Integer, Vote> getVotesData() {
         try {
             Map<Integer, Vote> result = new HashMap<>();
-            BufferedReader reader = new BufferedReader(new FileReader("votes.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader(CSV_FILES + "votes.csv"));
             String line = reader.readLine();
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
@@ -54,7 +56,7 @@ public class CsvUtilsImpl implements CsvUtils {
     public Map<Integer, Legislator> getLegislatorsData() {
         try {
             Map<Integer, Legislator> result = new HashMap<>();
-            BufferedReader reader = new BufferedReader(new FileReader("legislators.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader(CSV_FILES + "legislators.csv"));
             String line = reader.readLine();
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
@@ -71,7 +73,7 @@ public class CsvUtilsImpl implements CsvUtils {
     public Map<Integer, Bill> getBillsData() {
         try {
             Map<Integer, Bill> result = new HashMap<>();
-            BufferedReader reader = new BufferedReader(new FileReader("bills.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader(CSV_FILES + "bills.csv"));
             String line = reader.readLine();
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");

@@ -1,24 +1,24 @@
 .navbar {
-    background-color: #5fb6e9;
-    padding: 10px;
-  }
-  
-  .navbar-nav {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-item {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
+  background-color: #5fb6e9;
+  padding: 10px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "a2ef58cd-fe6c-427e-9a33-b3e494c52430",
+		"name": "Quorum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2667848"
+	},
+	"item": [
+		{
+			"name": "legislators",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/legislators",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"legislators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bills",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bills",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bills"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
